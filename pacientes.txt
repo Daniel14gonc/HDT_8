@@ -1,0 +1,6 @@
+Juan Perez,fractura de pierna,B
+Alejandro Blanco,tos,C
+Lorena Jimenez,apendicitis,A
+Andres Arriola,covid,A
+Esteban Sarmiento,chinkunguya,D
+Sebastian Diaz, infeccion gastrica, B

@@ -7,16 +7,16 @@ public class VectorHeapTest {
 
     @Test
     public void remove() {
-        VectorHeap<Integer> vHeap = new VectorHeap<Integer>();
-        vHeap.add(2);
-        vHeap.add(1);
-        vHeap.add(3);
-        vHeap.add(-1);
-        vHeap.add(-50);
+        VectorHeap<Paciente> vHeap = new VectorHeap<Paciente>();
+        Paciente p1 = new Paciente("Juan", "Gripe", "A");
+        Paciente p2 = new Paciente("Luis", "Tos", "B");
 
-        Integer temp = vHeap.remove();
+        vHeap.add(p1);
+        vHeap.add(p2);
 
-        assertEquals(temp.intValue(), -50);
+        Paciente temp = vHeap.remove();
+
+        assertEquals(temp, p1);
 
     }
 

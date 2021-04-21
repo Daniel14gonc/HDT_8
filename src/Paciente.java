@@ -1,3 +1,11 @@
+/*
+ *  Nombre: Daniel Gonzalez Carrillo
+ *  Clase: Paciente
+ *  Modificacion: 21.04.2021
+ *  Descripcion: Clase que permite definir un paciente para utilizarlo en la cola de un hospital.
+ *
+ */
+
 public class Paciente implements Comparable<Paciente> {
 
     private String nombre;
@@ -32,6 +40,12 @@ public class Paciente implements Comparable<Paciente> {
 
     @Override
     public int compareTo(Paciente paciente) {
+        //Post: Compara por codigo de paciente.
         return codigo.compareTo(paciente.getCodigo());
+    }
+
+    @Override
+    public String toString() {
+        return nombre + ", " + sintoma + ", " + codigo;
     }
 }
